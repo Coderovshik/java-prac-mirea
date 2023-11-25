@@ -13,4 +13,9 @@ public class RoundDish extends Dish {
     public void setRadius(double radius) {
         this.radius = radius;
     }
+
+    @Override
+    public void printDish() {
+          System.out.println(radius);
+    }   
 }

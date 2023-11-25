@@ -36,6 +36,8 @@ public abstract class Dish {
         this.timeToWash = timeToWash;
     }
 
+    abstract public void printDish();
+
     @Override
     public String toString() {
         return this.getShape() + " dish made of " + this.getMaterial();

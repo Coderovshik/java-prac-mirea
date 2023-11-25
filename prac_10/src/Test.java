@@ -1,12 +1,19 @@
+
 public class Test {
     public static void main(String[] args) {
-        Nameable[] N = new Nameable[3];
-        N[0] = new Animal("Max", "Dog");
-        N[1] = new Car("Volkswagen", 60);
-        N[2] = new Planet("Pluto", 1000);
 
-        for (Nameable n : N) {
-            System.out.println(n.getName());
-        }
+        String name = "text";
+
+        FileWork task = new FileWork();
+        System.out.println("1: запись в файл");
+        task.task_1(name);
+        System.out.println("2: вывод из файла");
+        task.task_2(name);
+        System.out.println('\n' + "3: Замена содержимого файла");
+        task.task_1(name);
+        System.out.println("4: Добавление в конец файла");
+        task.task_4(name);
+        System.out.println("Результат");
+        task.task_2(name);
     }
 }

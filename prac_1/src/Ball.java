@@ -40,9 +40,9 @@ public class Ball {
         return color;
     }
 
-    // public String toString() {
-    //     return "ball - radius: " + this.radius + ", color: " + this.color;
-    // }
+    public String toString() {
+        return "ball - radius: " + this.radius + ", color: " + this.color;
+    }
 
     public void printVolume() {
         double PI = 3.14;

@@ -57,6 +57,6 @@ public class Recursion {
     }
     
     public static void main(String[] args) {
-        solution15(1234);
+        System.out.println(solution17());
     }
 }

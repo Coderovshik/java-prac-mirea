@@ -13,4 +13,9 @@ public class SquareDish extends Dish {
     public void setSide(double side) {
         this.side = side;
     }
+
+    @Override
+    public void printDish() {
+        System.out.println(side);
+    }
 }

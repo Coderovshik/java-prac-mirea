@@ -96,36 +96,23 @@ public class Test {
 
     public static void main(String[] args) {
         final int size = 10;
-        Student[] students1 = new Student[size];
+        Student[] students = new Student[size];
         for (int i = 0; i < size; i++) {
-            students1[i] = new Student(size - i, i);
-        }
-
-        Student[] students2 = new Student[size];
-        for (int i = 0; i < size; i++) {
-            students2[i] = new Student(size + 10 - i, i + 10);
-        }
-
-        Student[] students = new Student[size * 2];
-        for (int i = 0; i < size; i++) {
-            students[i] = students1[i];
-        }
-        for (int i = 0; i < size; i++) {
-            students[size + i] = students2[i];
+            students[i] = new Student(size - i, i);
         }
 
         SortingStudentsByGPA comparator = new SortingStudentsByGPA();
         
         for (int i = 0; i < size; i++) {
-            System.out.println(students1[i]);
+            System.out.println(students[i]);
         }
         System.out.println("---------------------------------------");
 
         // insertionSort(students, size);
-        quickSort(students1, 0, size - 1, comparator);
+        quickSort(students, 0, size - 1, comparator);
         // mergeSort(students, 0, size * 2);
 
-        for (int i = 0; i < size * 2; i++) {
+        for (int i = 0; i < size; i++) {
             System.out.println(students[i]);
         }
         System.out.print('\n');
